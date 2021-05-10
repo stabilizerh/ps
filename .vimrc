@@ -76,10 +76,6 @@ if $LANG[0]=='k' && $LANG[1]=='o'
 set fileencoding=korea
 endif
 
-"Latex setting
-source $HOME/.vim/latexrc
-au BufRead *latexrc set filetype=vim
-
 map ,k :w<cr>:!./a.out <% <cr>
 au Filetype c,cpp vmap <buffer> i :norm i//<cr>
 au Filetype c,cpp vmap <buffer> x :norm 2x<cr>
